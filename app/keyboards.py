@@ -2,8 +2,7 @@ from aiogram.types import (ReplyKeyboardMarkup, KeyboardButton,
                            InlineKeyboardMarkup, InlineKeyboardButton)
 from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
 
-from requests import get_menu
-from tenacity import retry_unless_exception_type
+from app.db.requests import get_menu
 
 register_profile = ReplyKeyboardMarkup(keyboard=[
     [KeyboardButton(text='Зарегистрироваться')]

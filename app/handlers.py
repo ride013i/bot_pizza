@@ -3,10 +3,10 @@ from aiogram.types import Message, CallbackQuery, ReplyKeyboardRemove
 from aiogram.filters import CommandStart, Command
 from aiogram.fsm.context import FSMContext
 
-import keyboards as kb
-from states import Reg
-from models import add_user, add_user_location, add_to_cart
-from requests import get_user_id, get_cart, get_profile, get_item
+import app.keyboards as kb
+from app.states import Reg
+from app.db.models import add_user, add_user_location, add_to_cart
+from app.db.requests import get_user_id, get_cart, get_profile, get_item
 
 router = Router()
 

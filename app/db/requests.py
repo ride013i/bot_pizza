@@ -2,8 +2,8 @@ import asyncio
 
 from sqlalchemy import select, insert, update, desc, delete
 
-from models import async_session
-from models import User, UserLocation, Menu, Cart
+from app.db.models import async_session
+from app.db.models import User, UserLocation, Menu, Cart
 
 # Получить все меню
 async def get_menu():
